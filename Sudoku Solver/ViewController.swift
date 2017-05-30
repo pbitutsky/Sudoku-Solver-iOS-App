@@ -29,6 +29,11 @@ class ViewController: UIViewController {
         outputSudoku(sudoku: sudokuSolver(sudoku: sudoku).0, tfCollection: tfCollection)
         
     }
+    @IBAction func clear(_ sender: Any) {
+        for x in tfCollection{
+            x.text = ""
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
